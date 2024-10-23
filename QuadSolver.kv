@@ -1,0 +1,66 @@
+<UI>:
+    orientation: 'vertical'
+    padding: 30
+
+    Label:
+        text: 'QUAD SOLVER APP'
+        font_size: 40
+        color: (1, 1, 1, 1)
+        
+
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: 5
+        padding: 5
+
+        TextInput:
+            id: a
+            hint_text: 'Enter a'
+            font_size: 20
+            background_color: (0.2, 0.2, 0.2, 1)
+            color: (1, 1, 1, 1)
+            radius: [10, 10, 10, 10]
+
+        TextInput:
+            id: b
+            hint_text: 'Enter b'
+            font_size: 20
+            background_color: (0.2, 0.2, 0.2, 1)
+            color: (1, 1, 1, 1)
+            radius: [10, 10, 10, 10]
+        
+        TextInput:
+            id: c
+            hint_text: 'Enter c'
+            font_size: 20
+            background_color: (0.2, 0.2, 0.2, 1)
+            color: (1, 1, 1, 1)
+            radius: [10, 10, 10, 10]
+
+        Label:
+			id: preview
+			text: root.txt
+			font_size: 25
+			color: (1, 1, 1, 1)
+        
+        Button:
+            text: 'Preview'
+            background_color: (0.4, 0.4, 0.4, 1)
+            color: (1, 1, 1, 1)
+            radius: [10, 10, 10, 10]
+            on_press: root.preview()
+		
+        
+        Button:
+            text: 'Calculate'
+            background_color: (0.4, 0.4, 0.4, 1)
+            color: (1, 1, 1, 1)
+            radius: [10, 10, 10, 10]
+            on_press: root.calculate()
+		
+		
+    Label:
+        text: '© 2024 EmmycodezStudio'
+        font_size: 15
+        color: (0.5, 0.5, 0.5, 1)
+        
